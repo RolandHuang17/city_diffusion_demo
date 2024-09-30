@@ -1,0 +1,13 @@
+{"time":"2024-09-30T14:48:29.676420511+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-09-30T14:48:29.676461787+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20240930_144829-batfev55/logs/debug-core.log"}
+{"time":"2024-09-30T14:48:29.748998623+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-09-30T14:48:29.754856417+08:00","level":"INFO","msg":"created new stream","id":"batfev55"}
+{"time":"2024-09-30T14:48:29.754901149+08:00","level":"INFO","msg":"stream: started","id":"batfev55"}
+{"time":"2024-09-30T14:48:29.754961305+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"batfev55"}}
+{"time":"2024-09-30T14:48:29.754986294+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"batfev55"}}
+{"time":"2024-09-30T14:48:29.755007289+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"batfev55"}}
+{"time":"2024-09-30T14:48:31.275473948+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-30T14:48:31.279667462+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-30T14:57:01.901089521+08:00","level":"INFO","msg":"stream: closing","id":"batfev55"}
+{"time":"2024-09-30T14:57:01.901131114+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-30T14:57:01.905150926+08:00","level":"INFO","msg":"Stopped system monitor"}

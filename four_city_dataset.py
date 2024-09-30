@@ -2,7 +2,7 @@ from torch.utils.data import Dataset, ConcatDataset
 from PIL import Image
 import torchvision
 import os
-
+from diffusers import StableDiffusionPipeline
 class MyDataset(Dataset):
     def __init__(self,root_dir,label_dir):
         self.root_dir = root_dir

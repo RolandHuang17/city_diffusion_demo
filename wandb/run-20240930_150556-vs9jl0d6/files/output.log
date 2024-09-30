@@ -1,0 +1,81 @@
+09/30/2024 15:05:57 - INFO - __main__ - ***** Running training *****
+09/30/2024 15:05:57 - INFO - __main__ -   Num examples = 5228
+09/30/2024 15:05:57 - INFO - __main__ -   Num Epochs = 12
+09/30/2024 15:05:57 - INFO - __main__ -   Instantaneous batch size per device = 1
+09/30/2024 15:05:57 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 4
+09/30/2024 15:05:57 - INFO - __main__ -   Gradient Accumulation steps = 4
+09/30/2024 15:05:57 - INFO - __main__ -   Total optimization steps = 15000
+Steps:   3%|▏   | 500/15000 [08:11<2:35:32,  1.55it/s, lr=9.97e-5, step_loss=0.122]09/30/2024 15:14:09 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500
+09/30/2024 15:14:17 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/model.safetensors
+09/30/2024 15:14:17 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/optimizer.bin
+09/30/2024 15:14:17 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/scheduler.bin
+09/30/2024 15:14:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/sampler.bin
+09/30/2024 15:14:17 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/random_states_0.pkl
+[2024-09-30 15:14:17,251] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+09/30/2024 15:14:17 - INFO - root - gcc -pthread -B /root/miniconda3/envs/diff/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /root/miniconda3/envs/diff/include -I/root/miniconda3/envs/diff/include -fPIC -O2 -isystem /root/miniconda3/envs/diff/include -fPIC -c /tmp/tmpjktawgj8/test.c -o /tmp/tmpjktawgj8/test.o
+09/30/2024 15:14:17 - INFO - root - gcc -pthread -B /root/miniconda3/envs/diff/compiler_compat /tmp/tmpjktawgj8/test.o -laio -o /tmp/tmpjktawgj8/a.out
+09/30/2024 15:14:18 - INFO - root - gcc -pthread -B /root/miniconda3/envs/diff/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /root/miniconda3/envs/diff/include -I/root/miniconda3/envs/diff/include -fPIC -O2 -isystem /root/miniconda3/envs/diff/include -fPIC -c /tmp/tmp_yvyza_s/test.c -o /tmp/tmp_yvyza_s/test.o
+09/30/2024 15:14:19 - INFO - root - gcc -pthread -B /root/miniconda3/envs/diff/compiler_compat /tmp/tmp_yvyza_s/test.o -L/usr/local/cuda -L/usr/local/cuda/lib64 -lcufile -o /tmp/tmp_yvyza_s/a.out
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_lora_weights.safetensors
+09/30/2024 15:14:20 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500
+Steps:   7%| | 1000/15000 [13:46<2:36:28,  1.49it/s, lr=9.89e-5, step_loss=0.00814]09/30/2024 15:19:44 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000
+09/30/2024 15:19:52 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/model.safetensors
+09/30/2024 15:19:52 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/optimizer.bin
+09/30/2024 15:19:52 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/scheduler.bin
+09/30/2024 15:19:52 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/sampler.bin
+09/30/2024 15:19:52 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_lora_weights.safetensors
+09/30/2024 15:19:52 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000
+Steps:   9%|▏ | 1307/15000 [17:16<3:20:21,  1.14it/s, lr=9.81e-5, step_loss=0.0043]{'requires_safety_checker', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                                                  /root/miniconda3/envs/diff/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn( components...:   0%|                                       | 0/7 [00:00<?, ?it/s]
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                                  Loaded feature_extractor as CLIPImageProcessor from `feature_extractor` subfolder of runwayml/stable-diffusion-v1-5.
+{'mid_block_add_attention', 'force_upcast', 'scaling_factor', 'latents_mean', 'shift_factor', 'use_quant_conv', 'use_post_quant_conv', 'latents_std'} was not found in config. Values will be initialized to default values.
+Loaded vae as AutoencoderKL from `vae` subfolder of runwayml/stable-diffusion-v1-5.
+{'timestep_spacing', 'prediction_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as PNDMScheduler from `scheduler` subfolder of runwayml/stable-diffusion-v1-5.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                                  Loaded safety_checker as StableDiffusionSafetyChecker from `safety_checker` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...: 100%|███████████████████████████████| 7/7 [00:00<00:00,  8.73it/s]
+09/30/2024 15:23:30 - INFO - __main__ - Running validation... ██████| 7/7 [00:00<00:00,  8.20it/s]
+ Generating 4 images with prompt: Buildings in Wuhan.
+Steps:  10%|▏ | 1500/15000 [20:29<2:35:12,  1.45it/s, lr=9.76e-5, step_loss=0.0426]09/30/2024 15:26:27 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500
+09/30/2024 15:26:35 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/model.safetensors
+09/30/2024 15:26:35 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/optimizer.bin
+09/30/2024 15:26:35 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/scheduler.bin
+09/30/2024 15:26:35 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/sampler.bin
+09/30/2024 15:26:35 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_lora_weights.safetensors
+09/30/2024 15:26:35 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500
+Steps:  13%|▎ | 2000/15000 [25:56<2:23:24,  1.51it/s, lr=9.57e-5, step_loss=0.0542]09/30/2024 15:31:54 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000
+09/30/2024 15:32:01 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/model.safetensors
+09/30/2024 15:32:02 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/optimizer.bin
+09/30/2024 15:32:02 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/scheduler.bin
+09/30/2024 15:32:02 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/sampler.bin
+09/30/2024 15:32:02 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_lora_weights.safetensors
+09/30/2024 15:32:02 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000
+Steps:  17%|▌  | 2500/15000 [31:24<2:18:08,  1.51it/s, lr=9.33e-5, step_loss=0.284]09/30/2024 15:37:21 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500
+09/30/2024 15:37:29 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/model.safetensors
+09/30/2024 15:37:29 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/optimizer.bin
+09/30/2024 15:37:29 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/scheduler.bin
+09/30/2024 15:37:29 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/sampler.bin
+09/30/2024 15:37:29 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_lora_weights.safetensors
+09/30/2024 15:37:29 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500
+Steps:  17%|▌  | 2614/15000 [32:45<3:11:08,  1.08it/s, lr=9.27e-5, step_loss=0.205]{'requires_safety_checker', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                                    /root/miniconda3/envs/diff/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn( components...:   0%|                         | 0/7 [00:00<?, ?it/s]
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                    Loaded feature_extractor as CLIPImageProcessor from `feature_extractor` subfolder of runwayml/stable-diffusion-v1-5.
+{'mid_block_add_attention', 'force_upcast', 'scaling_factor', 'latents_mean', 'shift_factor', 'use_quant_conv', 'use_post_quant_conv', 'latents_std'} was not found in config. Values will be initialized to default values.
+Loaded vae as AutoencoderKL from `vae` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                    {'timestep_spacing', 'prediction_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as PNDMScheduler from `scheduler` subfolder of runwayml/stable-diffusion-v1-5.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                    Loaded safety_checker as StableDiffusionSafetyChecker from `safety_checker` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...: 100%|█████████████████| 7/7 [00:01<00:00,  6.89it/s]
+09/30/2024 15:38:46 - INFO - __main__ - Running validation... 0:01<00:00,  5.99it/s]
+ Generating 4 images with prompt: Buildings in Wuhan.
+Steps:  18%|▌  | 2654/15000 [33:37<2:17:01,  1.50it/s, lr=9.25e-5, step_loss=0.125]

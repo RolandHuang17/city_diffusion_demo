@@ -1,0 +1,494 @@
+09/30/2024 15:00:18 - INFO - __main__ - ***** Running training *****
+09/30/2024 15:00:18 - INFO - __main__ -   Num examples = 5228
+09/30/2024 15:00:18 - INFO - __main__ -   Num Epochs = 12
+09/30/2024 15:00:18 - INFO - __main__ -   Instantaneous batch size per device = 1
+09/30/2024 15:00:18 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 4
+09/30/2024 15:00:18 - INFO - __main__ -   Gradient Accumulation steps = 4
+09/30/2024 15:00:18 - INFO - __main__ -   Total optimization steps = 15000
+Steps:   3%|▏    | 500/15000 [01:11<32:48,  7.37it/s, lr=9.97e-5, step_loss=0.0113]09/30/2024 15:01:30 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500
+[2024-09-30 15:00:20,318] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 4294967296, reducing to 2147483648
+[2024-09-30 15:00:20,499] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2147483648, reducing to 1073741824
+[2024-09-30 15:00:20,666] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1073741824, reducing to 536870912
+[2024-09-30 15:00:20,831] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 536870912, reducing to 268435456
+[2024-09-30 15:00:20,998] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 268435456, reducing to 134217728
+[2024-09-30 15:00:21,166] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 134217728, reducing to 67108864
+[2024-09-30 15:00:21,331] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 67108864, reducing to 33554432
+[2024-09-30 15:00:21,506] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 33554432, reducing to 16777216
+[2024-09-30 15:00:21,674] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 16777216, reducing to 8388608
+[2024-09-30 15:00:21,826] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 8388608, reducing to 4194304
+[2024-09-30 15:00:21,962] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 4194304, reducing to 2097152
+[2024-09-30 15:00:22,096] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2097152, reducing to 1048576
+[2024-09-30 15:00:22,809] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:01:30 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:01:30,154] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:01:31,023] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:01:31,023] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:01:49,471] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:01:49,517] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:01:49,543] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:01:49,544] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:01:49,544] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:01:49 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_model
+09/30/2024 15:01:49 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/scheduler.bin
+09/30/2024 15:01:49 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/sampler.bin
+09/30/2024 15:01:49 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500/pytorch_lora_weights.safetensors
+09/30/2024 15:01:49 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-500
+Steps:   7%|▎    | 1000/15000 [02:41<31:51,  7.33it/s, lr=9.89e-5, step_loss=0.292]09/30/2024 15:03:00 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000
+[2024-09-30 15:02:29,983] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 524288, reducing to 262144
+09/30/2024 15:03:00 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:03:00,043] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:03:00,909] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:03:00,909] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:03:27,946] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:03:27,980] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:03:28,103] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:03:28,104] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:03:28,104] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:03:28 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_model
+09/30/2024 15:03:28 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/scheduler.bin
+09/30/2024 15:03:28 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/sampler.bin
+09/30/2024 15:03:28 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000/pytorch_lora_weights.safetensors
+09/30/2024 15:03:28 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1000
+Steps:  10%|▎  | 1500/15000 [04:21<31:03,  7.25it/s, lr=9.76e-5, step_loss=0.00476]09/30/2024 15:04:40 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500
+09/30/2024 15:04:40 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:04:40,391] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:04:41,247] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:04:41,247] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:04:58,252] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:04:58,301] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:04:58,328] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:04:58,328] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:04:58,328] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:04:58 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_model
+09/30/2024 15:04:58 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/scheduler.bin
+09/30/2024 15:04:58 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/sampler.bin
+09/30/2024 15:04:58 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500/pytorch_lora_weights.safetensors
+09/30/2024 15:04:58 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-1500
+Steps:  13%|▋    | 2000/15000 [05:52<30:44,  7.05it/s, lr=9.57e-5, step_loss=0.123]09/30/2024 15:06:10 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000
+09/30/2024 15:06:10 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:06:10,912] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:06:11,780] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:06:11,780] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:06:38,225] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:06:38,231] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:06:38,275] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:06:38,276] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:06:38,276] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:06:38 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_model
+09/30/2024 15:06:38 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/scheduler.bin
+09/30/2024 15:06:38 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/sampler.bin
+09/30/2024 15:06:38 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000/pytorch_lora_weights.safetensors
+09/30/2024 15:06:38 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2000
+Steps:  17%|▊    | 2500/15000 [07:32<29:01,  7.18it/s, lr=9.34e-5, step_loss=0.465]09/30/2024 15:07:51 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500
+[2024-09-30 15:07:08,427] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 524288, reducing to 262144
+09/30/2024 15:07:51 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:07:51,076] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:07:51,954] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:07:51,954] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:08:09,274] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:08:09,320] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:08:09,349] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:08:09,350] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:08:09,350] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:08:09 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_model
+09/30/2024 15:08:09 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/scheduler.bin
+09/30/2024 15:08:09 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/sampler.bin
+09/30/2024 15:08:09 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500/pytorch_lora_weights.safetensors
+09/30/2024 15:08:09 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-2500
+Steps:  20%|█    | 3000/15000 [09:05<29:10,  6.85it/s, lr=9.05e-5, step_loss=0.124]09/30/2024 15:09:23 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000
+09/30/2024 15:09:23 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:09:23,991] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:09:24,901] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:09:24,901] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:09:48,573] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:09:48,596] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:09:48,682] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:09:48,683] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:09:48,683] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:09:48 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_model
+09/30/2024 15:09:48 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/scheduler.bin
+09/30/2024 15:09:48 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/sampler.bin
+09/30/2024 15:09:48 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_lora_weights.safetensors
+09/30/2024 15:09:48 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000
+Steps:  23%|█▏   | 3500/15000 [10:46<33:18,  5.75it/s, lr=8.73e-5, step_loss=0.191]09/30/2024 15:11:05 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500
+09/30/2024 15:11:05 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:11:05,310] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:11:06,466] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:11:06,467] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:11:10,145] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:11:10,147] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:11:10,159] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:11:10,160] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:11:10,160] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:11:10 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_model
+09/30/2024 15:11:10 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/scheduler.bin
+09/30/2024 15:11:10 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/sampler.bin
+09/30/2024 15:11:10 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_lora_weights.safetensors
+09/30/2024 15:11:10 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500
+Steps:  27%|▊  | 4000/15000 [12:03<25:36,  7.16it/s, lr=8.36e-5, step_loss=0.00775]09/30/2024 15:12:22 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000
+09/30/2024 15:12:22 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:12:22,098] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:12:23,120] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:12:23,121] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:12:26,883] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:12:26,889] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:12:26,901] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:12:26,901] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:12:26,901] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:12:26 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_model
+09/30/2024 15:12:26 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/scheduler.bin
+09/30/2024 15:12:26 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/sampler.bin
+09/30/2024 15:12:26 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_lora_weights.safetensors
+09/30/2024 15:12:26 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000
+Steps:  30%|█▏  | 4500/15000 [13:20<25:01,  6.99it/s, lr=7.95e-5, step_loss=0.0467]09/30/2024 15:13:38 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500
+[2024-09-30 15:13:05,197] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:13:38 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:13:38,774] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:13:39,972] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:13:39,972] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:13:43,793] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:13:43,805] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:13:43,817] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:13:43,817] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:13:43,817] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:13:43 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_model
+09/30/2024 15:13:43 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/scheduler.bin
+09/30/2024 15:13:43 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/sampler.bin
+09/30/2024 15:13:43 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500/pytorch_lora_weights.safetensors
+09/30/2024 15:13:43 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4500
+Steps:  33%|█▋   | 5000/15000 [14:36<23:13,  7.18it/s, lr=7.52e-5, step_loss=0.306]09/30/2024 15:14:54 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000
+09/30/2024 15:14:54 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:14:54,622] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:14:55,725] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:14:55,726] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:14:59,571] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:14:59,584] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:14:59,595] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:14:59,595] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:14:59,595] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:14:59 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_model
+09/30/2024 15:14:59 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/scheduler.bin
+09/30/2024 15:14:59 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/sampler.bin
+09/30/2024 15:14:59 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000/pytorch_lora_weights.safetensors
+09/30/2024 15:14:59 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5000
+Steps:  35%|█  | 5228/15000 [15:15<29:26,  5.53it/s, lr=7.31e-5, step_loss=0.00424]{'image_encoder', 'requires_safety_checker'} was not found in config. Values will be initialized to default values.
+                                                                                       Loaded safety_checker as StableDiffusionSafetyChecker from `safety_checker` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...:   0%|                            | 0/7 [00:00<?, ?it/s]{'prediction_type', 'timestep_spacing'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as PNDMScheduler from `scheduler` subfolder of runwayml/stable-diffusion-v1-5.
+Loaded feature_extractor as CLIPImageProcessor from `feature_extractor` subfolder of runwayml/stable-diffusion-v1-5.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                       /root/miniconda3/envs/diff/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn( components...:  71%|██████████████▎     | 5/7 [00:00<00:00,  9.66it/s]
+Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of runwayml/stable-diffusion-v1-5.
+{'mid_block_add_attention', 'shift_factor', 'scaling_factor', 'latents_std', 'use_post_quant_conv', 'force_upcast', 'use_quant_conv', 'latents_mean'} was not found in config. Values will be initialized to default values.
+Loaded vae as AutoencoderKL from `vae` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...: 100%|████████████████████| 7/7 [00:00<00:00,  9.66it/s]
+09/30/2024 15:15:36 - INFO - __main__ - Running validation...  [00:00<00:00, 11.39it/s]
+ Generating 4 images with prompt: Totoro.
+Steps:  37%|█▍  | 5500/15000 [16:06<23:15,  6.81it/s, lr=7.05e-5, step_loss=0.0404]09/30/2024 15:16:25 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500
+09/30/2024 15:16:25 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:16:25,419] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:16:26,643] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:16:26,643] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:16:32,230] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:16:32,249] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:16:32,261] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:16:32,261] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:16:32,261] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:16:32 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_model
+09/30/2024 15:16:32 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/scheduler.bin
+09/30/2024 15:16:32 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/sampler.bin
+09/30/2024 15:16:32 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500/pytorch_lora_weights.safetensors
+09/30/2024 15:16:32 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-5500
+Steps:  40%|█▌  | 6000/15000 [17:26<21:26,  7.00it/s, lr=6.56e-5, step_loss=0.0432]09/30/2024 15:17:45 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000
+[2024-09-30 15:16:36,666] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:17:45 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:17:45,497] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:17:46,729] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:17:46,730] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:17:50,698] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:17:50,715] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:17:50,725] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:17:50,726] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:17:50,726] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:17:50 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_model
+09/30/2024 15:17:50 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/scheduler.bin
+09/30/2024 15:17:50 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/sampler.bin
+09/30/2024 15:17:50 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000/pytorch_lora_weights.safetensors
+09/30/2024 15:17:50 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6000
+Steps:  43%|██▏  | 6500/15000 [18:46<19:39,  7.21it/s, lr=6.06e-5, step_loss=0.014]09/30/2024 15:19:05 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500
+09/30/2024 15:19:05 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:19:05,136] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:19:06,418] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:19:06,418] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:19:11,543] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:19:11,561] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:19:11,572] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:19:11,573] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:19:11,573] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:19:11 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_model
+09/30/2024 15:19:11 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/scheduler.bin
+09/30/2024 15:19:11 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/sampler.bin
+09/30/2024 15:19:11 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500/pytorch_lora_weights.safetensors
+09/30/2024 15:19:11 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-6500
+Steps:  47%|█▊  | 7000/15000 [20:10<17:58,  7.42it/s, lr=5.54e-5, step_loss=0.0221]09/30/2024 15:20:29 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000
+[2024-09-30 15:19:17,451] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:20:29 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:20:29,232] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:20:30,332] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:20:30,332] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:20:34,145] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:20:34,162] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:20:34,173] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:20:34,173] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:20:34,173] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:20:34 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_model
+09/30/2024 15:20:34 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/scheduler.bin
+09/30/2024 15:20:34 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/sampler.bin
+09/30/2024 15:20:34 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000/pytorch_lora_weights.safetensors
+09/30/2024 15:20:34 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7000
+Steps:  50%|██▌  | 7500/15000 [21:33<23:36,  5.29it/s, lr=5.02e-5, step_loss=0.383]09/30/2024 15:21:52 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500
+09/30/2024 15:21:52 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:21:52,080] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:21:53,306] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:21:53,307] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:21:57,496] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:21:57,514] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:21:57,525] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:21:57,525] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:21:57,525] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:21:57 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_model
+09/30/2024 15:21:57 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/scheduler.bin
+09/30/2024 15:21:57 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/sampler.bin
+09/30/2024 15:21:57 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500/pytorch_lora_weights.safetensors
+09/30/2024 15:21:57 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-7500
+Steps:  53%|██▋  | 8000/15000 [22:54<16:01,  7.28it/s, lr=4.5e-5, step_loss=0.0538]09/30/2024 15:23:13 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000
+[2024-09-30 15:22:09,819] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:23:13 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:23:13,291] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:23:14,250] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:23:14,250] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:23:18,712] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:23:18,741] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:23:18,752] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:23:18,752] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:23:18,752] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:23:18 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_model
+09/30/2024 15:23:18 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/scheduler.bin
+09/30/2024 15:23:18 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/sampler.bin
+09/30/2024 15:23:18 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000/pytorch_lora_weights.safetensors
+09/30/2024 15:23:18 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8000
+Steps:  57%|██▊  | 8500/15000 [24:14<18:25,  5.88it/s, lr=3.98e-5, step_loss=0.524]09/30/2024 15:24:33 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500
+09/30/2024 15:24:33 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:24:33,059] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:24:34,349] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:24:34,349] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:24:38,471] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:24:38,488] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:24:38,500] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:24:38,500] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:24:38,500] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:24:38 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_model
+09/30/2024 15:24:38 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/scheduler.bin
+09/30/2024 15:24:38 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/sampler.bin
+09/30/2024 15:24:38 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500/pytorch_lora_weights.safetensors
+09/30/2024 15:24:38 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-8500
+Steps:  60%|███  | 9000/15000 [25:31<13:50,  7.23it/s, lr=3.48e-5, step_loss=0.105]09/30/2024 15:25:49 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000
+[2024-09-30 15:25:45,157] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:25:49 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:25:49,758] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:25:50,764] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:25:50,765] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:25:54,690] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:25:54,701] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:25:54,711] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:25:54,711] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:25:54,711] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:25:54 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_model
+09/30/2024 15:25:54 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/scheduler.bin
+09/30/2024 15:25:54 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/sampler.bin
+09/30/2024 15:25:54 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000/pytorch_lora_weights.safetensors
+09/30/2024 15:25:54 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9000
+Steps:  63%|██▌ | 9500/15000 [26:50<12:18,  7.45it/s, lr=2.99e-5, step_loss=0.0223]09/30/2024 15:27:08 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500
+09/30/2024 15:27:08 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:27:08,818] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:27:09,676] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:27:09,676] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:27:13,320] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:27:13,336] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:27:13,347] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:27:13,347] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:27:13,347] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:27:13 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_model
+09/30/2024 15:27:13 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/scheduler.bin
+09/30/2024 15:27:13 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/sampler.bin
+09/30/2024 15:27:13 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500/pytorch_lora_weights.safetensors
+09/30/2024 15:27:13 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-9500
+Steps:  67%|██▋ | 10000/15000 [28:06<14:26,  5.77it/s, lr=2.52e-5, step_loss=0.285]09/30/2024 15:28:24 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000
+09/30/2024 15:28:24 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:28:24,922] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:28:26,512] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:28:26,512] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:28:30,821] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:28:30,838] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:28:30,848] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:28:30,849] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:28:30,849] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:28:30 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_model
+09/30/2024 15:28:30 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/scheduler.bin
+09/30/2024 15:28:30 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/sampler.bin
+09/30/2024 15:28:30 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000/pytorch_lora_weights.safetensors
+09/30/2024 15:28:30 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10000
+Steps:  70%|█▍| 10500/15000 [29:27<12:20,  6.08it/s, lr=2.08e-5, step_loss=0.00883]09/30/2024 15:29:45 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500
+[2024-09-30 15:29:17,346] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:29:45 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:29:45,805] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:29:46,927] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:29:46,927] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:29:51,015] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:29:51,033] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:29:51,046] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:29:51,046] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:29:51,046] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:29:51 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_model
+09/30/2024 15:29:51 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/scheduler.bin
+09/30/2024 15:29:51 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/sampler.bin
+09/30/2024 15:29:51 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500/pytorch_lora_weights.safetensors
+09/30/2024 15:29:51 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-10500
+Steps:  73%|██▉ | 11000/15000 [30:52<12:41,  5.26it/s, lr=1.67e-5, step_loss=0.105]09/30/2024 15:31:11 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000
+09/30/2024 15:31:11 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:31:11,262] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:31:12,710] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:31:12,711] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:31:17,293] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:31:17,309] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:31:17,320] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:31:17,320] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:31:17,321] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:31:17 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_model
+09/30/2024 15:31:17 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/scheduler.bin
+09/30/2024 15:31:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/sampler.bin
+09/30/2024 15:31:17 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000/pytorch_lora_weights.safetensors
+09/30/2024 15:31:17 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11000
+Steps:  77%|███▊ | 11500/15000 [32:15<09:20,  6.25it/s, lr=1.3e-5, step_loss=0.119]09/30/2024 15:32:34 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500
+[2024-09-30 15:32:13,520] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:32:34 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:32:34,306] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:32:35,228] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:32:35,229] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:32:39,046] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:32:39,064] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:32:39,076] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:32:39,076] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:32:39,076] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:32:39 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_model
+09/30/2024 15:32:39 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/scheduler.bin
+09/30/2024 15:32:39 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/sampler.bin
+09/30/2024 15:32:39 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500/pytorch_lora_weights.safetensors
+09/30/2024 15:32:39 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-11500
+Steps:  80%|███▏| 12000/15000 [33:32<08:54,  5.61it/s, lr=9.69e-6, step_loss=0.169]09/30/2024 15:33:51 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000
+09/30/2024 15:33:51 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:33:51,259] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:33:52,703] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:33:52,703] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:33:57,136] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:33:57,156] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:33:57,167] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:33:57,168] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:33:57,168] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:33:57 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_model
+09/30/2024 15:33:57 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/scheduler.bin
+09/30/2024 15:33:57 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/sampler.bin
+09/30/2024 15:33:57 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000/pytorch_lora_weights.safetensors
+09/30/2024 15:33:57 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12000
+Steps:  83%|██▌| 12500/15000 [34:52<06:00,  6.94it/s, lr=6.82e-6, step_loss=0.0472]09/30/2024 15:35:11 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500
+[2024-09-30 15:35:06,154] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:35:11 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:35:11,335] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:35:12,446] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:35:12,446] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:35:16,909] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:35:16,926] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:35:16,937] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:35:16,937] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:35:16,937] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:35:16 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_model
+09/30/2024 15:35:16 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/scheduler.bin
+09/30/2024 15:35:16 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/sampler.bin
+09/30/2024 15:35:16 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500/pytorch_lora_weights.safetensors
+09/30/2024 15:35:16 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-12500
+Steps:  87%|█████▏| 13000/15000 [36:12<04:49,  6.91it/s, lr=4.43e-6, step_loss=0.2]09/30/2024 15:36:31 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000
+09/30/2024 15:36:31 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:36:31,182] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:36:32,319] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:36:32,320] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:36:36,209] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:36:36,225] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:36:36,237] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:36:36,237] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:36:36,237] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:36:36 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_model
+09/30/2024 15:36:36 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/scheduler.bin
+09/30/2024 15:36:36 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/sampler.bin
+09/30/2024 15:36:36 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000/pytorch_lora_weights.safetensors
+09/30/2024 15:36:36 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13000
+Steps:  90%|██▋| 13500/15000 [37:28<03:35,  6.97it/s, lr=2.53e-6, step_loss=0.0135]09/30/2024 15:37:47 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500
+[2024-09-30 15:37:44,240] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1048576, reducing to 524288
+09/30/2024 15:37:47 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:37:47,092] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:37:47,974] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:37:47,974] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:37:52,121] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:37:52,142] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:37:52,152] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:37:52,153] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:37:52,153] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:37:52 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_model
+09/30/2024 15:37:52 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/scheduler.bin
+09/30/2024 15:37:52 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/sampler.bin
+09/30/2024 15:37:52 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500/pytorch_lora_weights.safetensors
+09/30/2024 15:37:52 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-13500
+Steps:  93%|███▋| 14000/15000 [38:46<02:26,  6.83it/s, lr=1.15e-6, step_loss=0.181]09/30/2024 15:39:04 - INFO - accelerate.accelerator - Saving current state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000
+09/30/2024 15:39:04 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+[2024-09-30 15:39:04,941] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2024-09-30 15:39:06,010] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/mp_rank_00_model_states.pt
+[2024-09-30 15:39:06,011] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/mp_rank_00_model_states.pt...
+[2024-09-30 15:39:10,454] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/mp_rank_00_model_states.pt.
+[2024-09-30 15:39:10,470] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-09-30 15:39:10,481] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-09-30 15:39:10,481] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-09-30 15:39:10,481] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+09/30/2024 15:39:10 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_model
+09/30/2024 15:39:10 - INFO - accelerate.checkpointing - Scheduler state saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/scheduler.bin
+09/30/2024 15:39:10 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/sampler.bin
+09/30/2024 15:39:10 - INFO - accelerate.checkpointing - Random states saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/random_states_0.pkl
+Model weights saved in root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000/pytorch_lora_weights.safetensors
+09/30/2024 15:39:10 - INFO - __main__ - Saved state to root/autodl-tmp/sddata/finetune/lora/city/checkpoint-14000
+Steps:  94%|███▊| 14167/15000 [39:15<01:52,  7.42it/s, lr=8.03e-7, step_loss=0.197]

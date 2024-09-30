@@ -1,0 +1,16 @@
+{"time":"2024-09-30T15:00:17.718428729+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-09-30T15:00:17.718475555+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20240930_150017-ae0sa0uf/logs/debug-core.log"}
+{"time":"2024-09-30T15:00:17.790858698+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-09-30T15:00:17.796117438+08:00","level":"INFO","msg":"created new stream","id":"ae0sa0uf"}
+{"time":"2024-09-30T15:00:17.796159847+08:00","level":"INFO","msg":"stream: started","id":"ae0sa0uf"}
+{"time":"2024-09-30T15:00:17.796180494+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ae0sa0uf"}}
+{"time":"2024-09-30T15:00:17.796189465+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ae0sa0uf"}}
+{"time":"2024-09-30T15:00:17.796209671+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ae0sa0uf"}}
+{"time":"2024-09-30T15:00:18.371699813+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-30T15:00:18.373214247+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-30T15:01:58.421931852+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:18:04.483641942+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:21:55.262356856+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:32:33.587611441+08:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: net/http: request canceled (Client.Timeout or context cancellation while reading body)"}
+{"time":"2024-09-30T15:35:00.592584335+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:35:26.313862814+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": unexpected EOF"}

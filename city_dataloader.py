@@ -13,6 +13,7 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=shuffle,
 
 # 示例：遍历 DataLoader，打印每个批次的信息
 for batch_idx, (images, labels) in enumerate(train_loader):
+    print(images.shape)
     print(f"批次 {batch_idx + 1}")
     print(f"该批次中的图片数量: {len(images)}")
     print(f"标签: {labels}")

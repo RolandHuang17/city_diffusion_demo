@@ -1,0 +1,81 @@
+{
+  "os":  "Linux-6.5.0-45-generic-x86_64-with-glibc2.31",
+  "python":  "3.9.19",
+  "startedAt":  "2024-09-30T07:05:56.805747Z",
+  "args":  [
+    "--pretrained_model_name_or_path",
+    "runwayml/stable-diffusion-v1-5",
+    "--dataset_name",
+    "/root/autodl-tmp/Proj/city_diffusion_demo/data",
+    "--dataloader_num_workers",
+    "8",
+    "--resolution",
+    "128",
+    "--center_crop",
+    "--random_flip",
+    "--train_batch_size",
+    "1",
+    "--gradient_accumulation_steps",
+    "4",
+    "--max_train_steps",
+    "15000",
+    "--learning_rate",
+    "1e-04",
+    "--max_grad_norm",
+    "1",
+    "--lr_scheduler",
+    "cosine",
+    "--lr_warmup_steps",
+    "0",
+    "--output_dir",
+    "/root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city",
+    "--push_to_hub",
+    "--hub_model_id",
+    "pokemon-lora",
+    "--report_to",
+    "wandb",
+    "--checkpointing_steps",
+    "500",
+    "--validation_prompt",
+    "Buildings in Wuhan",
+    "--seed",
+    "1337"
+  ],
+  "program":  "./train_lora.py",
+  "codePath":  "train_lora.py",
+  "git":  {
+    "remote":  "https://github.com/RolandHuang17/city_diffusion_demo.git",
+    "commit":  "0287594083134874f5e76aec73cf6a8159a0c963"
+  },
+  "email":  "pptanya0129@gmail.com",
+  "root":  "/root/autodl-tmp/Proj/city_diffusion_demo",
+  "host":  "autodl-container-ed694b80a6-58b2971c",
+  "username":  "root",
+  "executable":  "/root/miniconda3/envs/diff/bin/python",
+  "codePathLocal":  "train_lora.py",
+  "cpu_count":  64,
+  "cpu_count_logical":  128,
+  "gpu":  "[]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1888559353856",
+      "used":  "1399992123392"
+    }
+  },
+  "memory":  {
+    "total":  "540636659712"
+  },
+  "cpu":  {
+    "count":  64,
+    "countLogical":  128
+  },
+  "gpu_nvidia":  [
+    {
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}
