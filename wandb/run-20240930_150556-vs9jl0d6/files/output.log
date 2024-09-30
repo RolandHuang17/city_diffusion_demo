@@ -78,4 +78,40 @@ Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of runwayml/s
 Loading pipeline components...: 100%|█████████████████| 7/7 [00:01<00:00,  6.89it/s]
 09/30/2024 15:38:46 - INFO - __main__ - Running validation... 0:01<00:00,  5.99it/s]
  Generating 4 images with prompt: Buildings in Wuhan.
-Steps:  18%|▌  | 2654/15000 [33:37<2:17:01,  1.50it/s, lr=9.25e-5, step_loss=0.125]
+Steps:  20%|▌  | 3000/15000 [37:24<2:20:24,  1.42it/s, lr=9.05e-5, step_loss=0.184]09/30/2024 15:43:21 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000
+09/30/2024 15:43:29 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/model.safetensors
+09/30/2024 15:43:29 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/optimizer.bin
+09/30/2024 15:43:29 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/scheduler.bin
+09/30/2024 15:43:29 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/sampler.bin
+09/30/2024 15:43:29 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000/pytorch_lora_weights.safetensors
+09/30/2024 15:43:30 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3000
+Steps:  23%|▋  | 3500/15000 [43:08<2:11:01,  1.46it/s, lr=8.72e-5, step_loss=0.238]09/30/2024 15:49:05 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500
+09/30/2024 15:49:12 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/model.safetensors
+09/30/2024 15:49:13 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/optimizer.bin
+09/30/2024 15:49:13 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/scheduler.bin
+09/30/2024 15:49:13 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/sampler.bin
+09/30/2024 15:49:13 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500/pytorch_lora_weights.safetensors
+09/30/2024 15:49:13 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-3500
+Steps:  26%|█   | 3921/15000 [47:54<2:50:55,  1.08it/s, lr=8.41e-5, step_loss=0.12]{'requires_safety_checker', 'image_encoder'} was not found in config. Values will be initialized to default values.
+                                                                                 Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...:   0%|                      | 0/7 [00:00<?, ?it/s]Loaded feature_extractor as CLIPImageProcessor from `feature_extractor` subfolder of runwayml/stable-diffusion-v1-5.
+{'mid_block_add_attention', 'force_upcast', 'scaling_factor', 'latents_mean', 'shift_factor', 'use_quant_conv', 'use_post_quant_conv', 'latents_std'} was not found in config. Values will be initialized to default values.
+Loaded vae as AutoencoderKL from `vae` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                 {'timestep_spacing', 'prediction_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as PNDMScheduler from `scheduler` subfolder of runwayml/stable-diffusion-v1-5.
+Loaded text_encoder as CLIPTextModel from `text_encoder` subfolder of runwayml/stable-diffusion-v1-5.
+                                                                                 Loaded safety_checker as StableDiffusionSafetyChecker from `safety_checker` subfolder of runwayml/stable-diffusion-v1-5.
+Loading pipeline components...: 100%|██████████████| 7/7 [00:01<00:00,  6.79it/s]
+09/30/2024 15:53:55 - INFO - __main__ - Running validation... 1<00:00,  5.92it/s]
+ Generating 4 images with prompt: Buildings in Wuhan.
+Steps:  27%|▊  | 4000/15000 [49:12<2:04:10,  1.48it/s, lr=8.35e-5, step_loss=0.208]09/30/2024 15:55:10 - INFO - accelerate.accelerator - Saving current state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000
+09/30/2024 15:55:17 - INFO - accelerate.checkpointing - Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/model.safetensors
+09/30/2024 15:55:17 - INFO - accelerate.checkpointing - Optimizer state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/optimizer.bin
+09/30/2024 15:55:17 - INFO - accelerate.checkpointing - Scheduler state saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/scheduler.bin
+09/30/2024 15:55:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/sampler.bin
+09/30/2024 15:55:17 - INFO - accelerate.checkpointing - Random states saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/random_states_0.pkl
+Model weights saved in /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000/pytorch_lora_weights.safetensors
+09/30/2024 15:55:17 - INFO - __main__ - Saved state to /root/autodl-tmp/root/autodl-tmp/sddata/finetune/lora/city/checkpoint-4000
+Steps:  29%|▌ | 4321/15000 [52:50<1:59:07,  1.49it/s, lr=8.09e-5, step_loss=0.0518]

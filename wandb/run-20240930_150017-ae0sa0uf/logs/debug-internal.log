@@ -14,3 +14,9 @@
 {"time":"2024-09-30T15:32:33.587611441+08:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: net/http: request canceled (Client.Timeout or context cancellation while reading body)"}
 {"time":"2024-09-30T15:35:00.592584335+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
 {"time":"2024-09-30T15:35:26.313862814+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": unexpected EOF"}
+{"time":"2024-09-30T15:40:03.599555397+08:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: context deadline exceeded (Client.Timeout or context cancellation while reading body)"}
+{"time":"2024-09-30T15:40:03.759545141+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:41:08.681461678+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:43:10.815639581+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:47:06.476834004+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
+{"time":"2024-09-30T15:50:06.491311801+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ae0sa0uf/file_stream\": EOF"}
