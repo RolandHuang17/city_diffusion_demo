@@ -1,0 +1,13 @@
+{"time":"2024-10-08T11:52:56.457023298+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-08T11:52:56.457065896+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20241008_115256-cdf1t8jt/logs/debug-core.log"}
+{"time":"2024-10-08T11:52:56.522693746+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-08T11:52:56.527983748+08:00","level":"INFO","msg":"created new stream","id":"cdf1t8jt"}
+{"time":"2024-10-08T11:52:56.528038258+08:00","level":"INFO","msg":"stream: started","id":"cdf1t8jt"}
+{"time":"2024-10-08T11:52:56.528061766+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"cdf1t8jt"}}
+{"time":"2024-10-08T11:52:56.528054121+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"cdf1t8jt"}}
+{"time":"2024-10-08T11:52:56.528082578+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"cdf1t8jt"}}
+{"time":"2024-10-08T11:52:57.087773223+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-08T11:52:57.089200447+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-08T13:04:54.877245929+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/cdf1t8jt/file_stream\": EOF"}
+{"time":"2024-10-08T13:07:19.684270797+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/cdf1t8jt/file_stream\": EOF"}
+{"time":"2024-10-08T13:11:49.697641611+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/cdf1t8jt/file_stream\": EOF"}

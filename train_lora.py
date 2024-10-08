@@ -588,7 +588,13 @@ def main():
 
     # Get the datasets: you can either provide your own training and evaluation files (see below)
     # or specify a Dataset from the hub (the dataset will be downloaded automatically from the datasets Hub).
-
+    def is_valid_image(img):
+            try:
+                # with Image.open(image_path) as img:
+                return img.size[0] == self.args.resolution  and img.size[1] == self.args.resolution
+            except Exception as e:
+                # print(f"Error opening image {image_path}: {e}")
+                return False
     # In distributed training, the load_dataset function guarantees that only one local process can concurrently
     # download the dataset.
     if args.dataset_name is not None:
@@ -670,6 +676,8 @@ def main():
         return model
 
     def preprocess_train(examples):
+        # images = [image.convert("RGB") for image in examples[image_column] if image.size == args.resolution]
+
         images = [image.convert("RGB") for image in examples[image_column]]
         examples["pixel_values"] = [train_transforms(image) for image in images]
         examples["input_ids"] = tokenize_captions(examples)

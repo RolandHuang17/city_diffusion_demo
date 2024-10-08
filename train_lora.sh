@@ -1,14 +1,13 @@
 #!/bin/bash
-
-# 设置环境变量
-export MODEL_NAME="runwayml/stable-diffusion-v1-5"
-export OUTPUT_DIR="root/autodl-tmp/sddata/finetune/lora/city"
-export HUB_MODEL_ID="city-lora"
+# export MODEL_NAME="runwayml/stable-diffusion-v1-5"
+export MODEL_NAME="bguisard/stable-diffusion-nano-2-1"
+export OUTPUT_DIR="root/autodl-tmp/sddata/finetune/lora/city_128"
+export HUB_MODEL_ID="city-lora128"
 # export DATASET_NAME="lambdalabs/pokemon-blip-captions"
 
 export DATASET_NAME="/root/autodl-tmp/Proj/city_diffusion_demo/data"
 
-# 运行训练脚本
+
 accelerate launch --mixed_precision="fp16" train_lora.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --dataset_name=$DATASET_NAME \
@@ -25,6 +24,6 @@ accelerate launch --mixed_precision="fp16" train_lora.py \
   --hub_model_id=${HUB_MODEL_ID} \
   --report_to=wandb \
   --checkpointing_steps=500 \
-  --validation_prompt="Totoro" \
+  --validation_prompt="Buildings in Wuhan" \
   --seed=1337 \
-  --validation_epochs 500
+  --validation_epochs 1

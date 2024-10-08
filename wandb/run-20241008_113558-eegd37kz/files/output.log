@@ -1,0 +1,64 @@
+10/08/2024 11:35:59 - INFO - __main__ - ***** Running training *****
+10/08/2024 11:35:59 - INFO - __main__ -   Num examples = 5228
+10/08/2024 11:35:59 - INFO - __main__ -   Num Epochs = 12
+10/08/2024 11:35:59 - INFO - __main__ -   Instantaneous batch size per device = 1
+10/08/2024 11:35:59 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 4
+10/08/2024 11:35:59 - INFO - __main__ -   Gradient Accumulation steps = 4
+10/08/2024 11:35:59 - INFO - __main__ -   Total optimization steps = 15000
+Steps:   0%|                                     | 0/15000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 981, in <module>
+    main()
+  File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 794, in main
+    for step, batch in enumerate(train_dataloader):
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/accelerate/data_loader.py", line 550, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+    return self._process_data(data)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+    data.reraise()
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+IndexError: Caught IndexError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in __getitems__
+    return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in <listcomp>
+    return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in <dictcomp>
+    return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+IndexError: list index out of range
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 981, in <module>
+[rank0]:     main()
+[rank0]:   File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 794, in main
+[rank0]:     for step, batch in enumerate(train_dataloader):
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/accelerate/data_loader.py", line 550, in __iter__
+[rank0]:     current_batch = next(dataloader_iter)
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank0]:     data = self._next_data()
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank0]:     return self._process_data(data)
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank0]:     data.reraise()
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/_utils.py", line 706, in reraise
+[rank0]:     raise exception
+[rank0]: IndexError: Caught IndexError in DataLoader worker process 0.
+[rank0]: Original Traceback (most recent call last):
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank0]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 50, in fetch
+[rank0]:     data = self.dataset.__getitems__(possibly_batched_index)
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in __getitems__
+[rank0]:     return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in <listcomp>
+[rank0]:     return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+[rank0]:   File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2748, in <dictcomp>
+[rank0]:     return [{col: array[i] for col, array in batch.items()} for i in range(n_examples)]
+[rank0]: IndexError: list index out of range

@@ -1,0 +1,26 @@
+2024-10-08 13:16:50,394 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Current SDK version is 0.18.2
+2024-10-08 13:16:50,394 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Configure stats pid to 47248
+2024-10-08 13:16:50,394 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-08 13:16:50,394 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Loading settings from /root/autodl-tmp/Proj/city_diffusion_demo/wandb/settings
+2024-10-08 13:16:50,394 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'train_lora.py', 'program_abspath': '/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py', 'program': '/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py'}
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:_log_setup():532] Logging user logs to /root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20241008_131650-z38lqd77/logs/debug.log
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:_log_setup():533] Logging internal logs to /root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20241008_131650-z38lqd77/logs/debug-internal.log
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:init():616] calling init triggers
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:init():623] wandb.init called with sweep_config: {}
+config: {}
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:init():666] starting backend
+2024-10-08 13:16:50,395 INFO    MainThread:47248 [wandb_init.py:init():670] sending inform_init request
+2024-10-08 13:16:50,397 INFO    MainThread:47248 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-08 13:16:50,398 INFO    MainThread:47248 [wandb_init.py:init():683] backend started and connected
+2024-10-08 13:16:50,406 INFO    MainThread:47248 [wandb_init.py:init():778] updated telemetry
+2024-10-08 13:16:50,494 INFO    MainThread:47248 [wandb_init.py:init():811] communicating run to backend with 90.0 second timeout
+2024-10-08 13:16:51,529 INFO    MainThread:47248 [wandb_init.py:init():862] starting run threads in backend
+2024-10-08 13:16:51,666 INFO    MainThread:47248 [wandb_run.py:_console_start():2464] atexit reg
+2024-10-08 13:16:51,666 INFO    MainThread:47248 [wandb_run.py:_redirect():2312] redirect: wrap_raw
+2024-10-08 13:16:51,666 INFO    MainThread:47248 [wandb_run.py:_redirect():2377] Wrapping output streams.
+2024-10-08 13:16:51,666 INFO    MainThread:47248 [wandb_run.py:_redirect():2402] Redirects installed.
+2024-10-08 13:16:51,667 INFO    MainThread:47248 [wandb_init.py:init():906] run started, returning control to user process
+2024-10-08 13:16:51,668 INFO    MainThread:47248 [wandb_run.py:_config_callback():1393] config_cb None None {'pretrained_model_name_or_path': 'bguisard/stable-diffusion-nano-2-1', 'revision': None, 'variant': None, 'dataset_name': '/root/autodl-tmp/Proj/city_diffusion_demo/data', 'dataset_config_name': None, 'train_data_dir': None, 'image_column': 'image', 'caption_column': 'text', 'validation_prompt': 'Wuhan Buildings', 'num_validation_images': 4, 'validation_epochs': 500, 'max_train_samples': None, 'output_dir': 'root/autodl-tmp/sddata/finetune/lora/city_128', 'cache_dir': None, 'seed': 1337, 'resolution': 128, 'center_crop': True, 'random_flip': True, 'train_batch_size': 1, 'num_train_epochs': 12, 'max_train_steps': 15000, 'gradient_accumulation_steps': 4, 'gradient_checkpointing': False, 'learning_rate': 0.0001, 'scale_lr': False, 'lr_scheduler': 'cosine', 'lr_warmup_steps': 0, 'snr_gamma': None, 'use_8bit_adam': False, 'allow_tf32': False, 'dataloader_num_workers': 8, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'push_to_hub': True, 'hub_token': None, 'prediction_type': None, 'hub_model_id': 'city-lora128', 'logging_dir': 'logs', 'mixed_precision': None, 'report_to': 'wandb', 'local_rank': 0, 'checkpointing_steps': 500, 'checkpoints_total_limit': None, 'resume_from_checkpoint': None, 'enable_xformers_memory_efficient_attention': False, 'noise_offset': 0, 'rank': 4}

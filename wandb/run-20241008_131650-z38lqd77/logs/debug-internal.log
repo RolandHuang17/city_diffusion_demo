@@ -1,0 +1,18 @@
+{"time":"2024-10-08T13:16:50.40322098+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-08T13:16:50.403241795+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20241008_131650-z38lqd77/logs/debug-core.log"}
+{"time":"2024-10-08T13:16:50.491076361+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-08T13:16:50.49632897+08:00","level":"INFO","msg":"created new stream","id":"z38lqd77"}
+{"time":"2024-10-08T13:16:50.496375626+08:00","level":"INFO","msg":"stream: started","id":"z38lqd77"}
+{"time":"2024-10-08T13:16:50.496425808+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"z38lqd77"}}
+{"time":"2024-10-08T13:16:50.496446259+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"z38lqd77"}}
+{"time":"2024-10-08T13:16:50.496420357+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"z38lqd77"}}
+{"time":"2024-10-08T13:16:51.53842341+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-08T13:16:51.539948484+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-08T13:36:10.012106964+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T13:36:16.083367553+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T13:36:23.346942618+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T13:36:35.793597347+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T14:05:26.298780684+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T14:10:41.276136041+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T14:14:26.31032876+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T15:14:52.150867561+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
