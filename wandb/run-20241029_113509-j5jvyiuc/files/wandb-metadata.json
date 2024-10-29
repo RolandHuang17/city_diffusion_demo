@@ -1,0 +1,67 @@
+{
+  "os":  "Linux-6.5.0-15-generic-x86_64-with-glibc2.31",
+  "python":  "3.9.20",
+  "startedAt":  "2024-10-29T03:35:09.184772Z",
+  "args":  [
+    "--pretrained_model_name_or_path=bguisard/stable-diffusion-nano-2-1",
+    "--dataset_name=/root/autodl-tmp/Proj/city_diffusion_demo/data2_2",
+    "--dataloader_num_workers=8",
+    "--resolution=128",
+    "--center_crop",
+    "--random_flip",
+    "--train_batch_size=1",
+    "--gradient_accumulation_steps=4",
+    "--max_train_steps=15000",
+    "--learning_rate=1e-04",
+    "--max_grad_norm=1",
+    "--lr_scheduler=cosine",
+    "--lr_warmup_steps=0",
+    "--output_dir=root/autodl-tmp/sddata/finetune/lora/city_128",
+    "--push_to_hub",
+    "--hub_model_id=city-lora128",
+    "--report_to=wandb",
+    "--checkpointing_steps=500",
+    "--validation_prompt=Buildings in Wuhan",
+    "--seed=1337",
+    "--validation_epochs",
+    "1"
+  ],
+  "program":  "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py",
+  "codePath":  "train_lora.py",
+  "git":  {
+    "remote":  "https://github.com/RolandHuang17/city_diffusion_demo.git",
+    "commit":  "3c47ac0741737a2035eda621148ab5a76e3679cd"
+  },
+  "email":  "pptanya0129@gmail.com",
+  "root":  "/root/autodl-tmp/Proj/city_diffusion_demo",
+  "host":  "autodl-container-3a4d46b511-0d4edb14",
+  "username":  "root",
+  "executable":  "/root/miniconda3/envs/diff/bin/python",
+  "codePathLocal":  "train_lora.py",
+  "cpu_count":  64,
+  "cpu_count_logical":  128,
+  "gpu":  "NVIDIA GeForce RTX 4090",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1573519278080",
+      "used":  "1287586992128"
+    }
+  },
+  "memory":  {
+    "total":  "405445267456"
+  },
+  "cpu":  {
+    "count":  64,
+    "countLogical":  128
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}

@@ -3,7 +3,7 @@ import os
 import csv
 
 # 设置 train 文件夹路径
-train_folder_path = "/root/autodl-tmp/Proj/city_diffusion_demo/data/train"  
+train_folder_path = "/root/autodl-tmp/Proj/city_diffusion_demo/data2_2/train"  
 csv_file = os.path.join(train_folder_path, "metadata.csv")  # metadata.csv in train folder
 
 with open(csv_file, mode='w', newline='') as file:

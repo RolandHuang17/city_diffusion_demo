@@ -1,0 +1,21 @@
+10/29/2024 11:33:33 - INFO - __main__ - ***** Running training *****
+10/29/2024 11:33:33 - INFO - __main__ -   Num examples = 5228
+10/29/2024 11:33:33 - INFO - __main__ -   Num Epochs = 12
+10/29/2024 11:33:33 - INFO - __main__ -   Instantaneous batch size per device = 1
+10/29/2024 11:33:33 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 4
+10/29/2024 11:33:33 - INFO - __main__ -   Gradient Accumulation steps = 4
+10/29/2024 11:33:33 - INFO - __main__ -   Total optimization steps = 15000
+Steps:   0%|         | 0/15000 [00:03<?, ?it/s, lr=0.0001, step_loss=0.498]Traceback (most recent call last):
+  File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 987, in <module>
+    main()
+  File "/root/autodl-tmp/Proj/city_diffusion_demo/train_lora.py", line 868, in main
+    accelerator.clip_grad_norm_(params_to_clip, args.max_grad_norm)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/accelerate/accelerator.py", line 1925, in clip_grad_norm_
+    self.unscale_gradients()
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/accelerate/accelerator.py", line 1888, in unscale_gradients
+    self.scaler.unscale_(opt)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/cuda/amp/grad_scaler.py", line 282, in unscale_
+    optimizer_state["found_inf_per_device"] = self._unscale_grads_(optimizer, inv_scale, found_inf, False)
+  File "/root/miniconda3/envs/diff/lib/python3.9/site-packages/torch/cuda/amp/grad_scaler.py", line 210, in _unscale_grads_
+    raise ValueError("Attempting to unscale FP16 gradients.")
+ValueError: Attempting to unscale FP16 gradients.
