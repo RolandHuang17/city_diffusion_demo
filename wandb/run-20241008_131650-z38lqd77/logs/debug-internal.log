@@ -16,3 +16,8 @@
 {"time":"2024-10-08T14:10:41.276136041+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
 {"time":"2024-10-08T14:14:26.31032876+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
 {"time":"2024-10-08T15:14:52.150867561+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T16:16:01.860158671+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T16:34:08.847160033+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T16:38:10.224060853+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T16:59:20.132703607+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}
+{"time":"2024-10-08T17:12:41.207933639+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/z38lqd77/file_stream\": EOF"}

@@ -1,0 +1,11 @@
+{"time":"2024-10-08T18:15:06.853988998+08:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-10-08T18:15:06.854008699+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/Proj/city_diffusion_demo/wandb/run-20241008_181506-ivxc0njy/logs/debug-core.log"}
+{"time":"2024-10-08T18:15:06.911794318+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-08T18:15:06.917475043+08:00","level":"INFO","msg":"created new stream","id":"ivxc0njy"}
+{"time":"2024-10-08T18:15:06.917516554+08:00","level":"INFO","msg":"stream: started","id":"ivxc0njy"}
+{"time":"2024-10-08T18:15:06.917536158+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ivxc0njy"}}
+{"time":"2024-10-08T18:15:06.917551859+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ivxc0njy"}}
+{"time":"2024-10-08T18:15:06.917562874+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ivxc0njy"}}
+{"time":"2024-10-08T18:15:07.642921657+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-08T18:15:07.64399943+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-08T18:30:06.667390899+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/pptanya/text2image-fine-tune/ivxc0njy/file_stream\": EOF"}
